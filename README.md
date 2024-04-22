@@ -1,6 +1,6 @@
 # Used Car Price Prediction Model for Financial Decision-Making
-Problem Description
-TIn the realm of financial decision-making, accurate forecasting of used car prices holds considerable significance. For both buyers and sellers, understanding the market value of pre-owned vehicles is crucial for making informed financial choices. This project endeavors to develop a predictive model aimed at precisely estimating the prices of used cars.
+Problem Description:-
+In the realm of financial decision-making, accurate forecasting of used car prices holds considerable significance. For both buyers and sellers, understanding the market value of pre-owned vehicles is crucial for making informed financial choices. This project endeavors to develop a predictive model aimed at precisely estimating the prices of used cars.
 
 Dataset Description
 The dataset contains 12 columns and 6019 rows. The columns in the dataset are:
