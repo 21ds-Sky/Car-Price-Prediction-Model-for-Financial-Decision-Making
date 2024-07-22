@@ -48,16 +48,21 @@ ElasticNet Regression
 
 Results
 Ordinary Least Squares (OLS) Regression:
+
 R-squared: 0.952
+
 Adjusted R-squared: 0.951
 
 Regularized Regression Results:
 
 Ridge Regression: R-squared = 0.756
+
 Lasso Regression: R-squared = 0.730
+
 ElasticNet Regression: R-squared = 0.766
 
-Conclusion
+Conclusion:-
+
 The OLS regression model performed the best with an R-squared value of 0.952.
 
 Regularized regression models (Ridge, Lasso, ElasticNet) showed lower R-squared values, indicating they were less effective in this particular case.
