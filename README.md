@@ -1,70 +1,101 @@
+<h1 align="center">🚗 Car Price Prediction</h1>
+<p align="center">
+  <strong>Analyze and predict used car prices using regression models</strong>
+</p>
 
-#Car Price Prediction
+---
 
-Objective
+## 📋 Objective
+This project aims to analyze and visualize used car prices using a dataset from Kaggle, employing various linear regression models to predict the most probable car prices. The main models used include **Linear Regression**, **Ridge Regression**, **Lasso Regression**, and **ElasticNet Regression**.
 
-In this project, the goal is to analyze and visualize used car prices from a dataset available on Kaggle. The aim is to predict the most probable car prices using basic linear regression models: Linear Regression, Ridge Regression, Lasso Regression, and ElasticNet Regression.
+Dataset: <a href="https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho">Vehicle Dataset from Cardekho</a>
 
-Vehicle dataset from cardekho : https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho/
+---
+
+## 🗃️ Dataset Description
+The dataset includes **301 records** and **9 features** related to used cars listed on <a href="https://www.cardekho.com/">Cardekho.com</a>.
+
+### Features:
+- **Car_Name**: The name of the car.
+- **Year**: Year of purchase.
+- **Selling_Price**: Selling price of the car.
+- **Present_Price**: Current ex-showroom price.
+- **Kms_Driven**: Kilometers driven.
+- **Fuel_Type**: Fuel type (Diesel, Petrol, CNG).
+- **Seller_Type**: Dealer or Individual.
+- **Transmission**: Manual or Automatic.
+- **Owner**: Number of previous owners.
+
+---
+
+## 🚀 Steps to Achieve the Objective
+
+### 1. Data Loading
+- Load the dataset from Kaggle.
+- Inspect for missing values and clean data as needed.
+
+### 2. Data Exploration
+- Perform **exploratory data analysis (EDA)** to understand data distribution.
+- Visualize data trends and patterns.
+
+### 3. Feature Engineering
+- Convert categorical features using **one-hot encoding**.
+- Engineer new features to enhance model performance if necessary.
+
+### 4. Model Building
+- Split dataset into training and testing sets.
+- Implement regression models:
+  - **Linear Regression**
+  - **Ridge Regression**
+  - **Lasso Regression**
+  - **ElasticNet Regression**
+
+---
+
+## 📊 Results
+
+### Ordinary Least Squares (OLS) Regression:
+- **R-squared**: 0.952
+- **Adjusted R-squared**: 0.951
+
+### Regularized Regression Models:
+- **Ridge Regression**: R-squared = 0.756
+- **Lasso Regression**: R-squared = 0.730
+- **ElasticNet Regression**: R-squared = 0.766
+
+---
+
+## 📝 Conclusion
+- The **OLS regression model** performed the best with an **R-squared value of 0.952**.
+- Regularized models (Ridge, Lasso, ElasticNet) yielded lower R-squared values, suggesting that **regularization did not enhance performance** on this dataset.
+- This indicates that while regularization techniques can help prevent overfitting, they may not outperform OLS for every dataset.
+
+---
+
+## 📂 Repository Structure
+
+project-directory │ ├── data │ └── vehicle-dataset.csv ├── notebooks │ └── eda.ipynb │ └── model_training.ipynb ├── models │ └── linear_regression_model.pkl │ └── ridge_regression_model.pkl │ └── lasso_regression_model.pkl │ └── elasticnet_regression_model.pkl ├── README.md └── requirements.txt
 
 
-Dataset Description
-The dataset contains information about used cars listed on www.cardekho.com. It will be used to predict car prices with the help of regression models.
 
-Dataset Size: 301 records * 9 features
+---
 
-Features:
-Car_Name: The name of the car.
-Year: The year in which the car was bought.
-Selling_Price: The price at which the owner wants to sell the car.
-Present_Price: The current ex-showroom price of the car.
-Kms_Driven: The distance completed by the car in kilometers.
-Fuel_Type: The type of fuel the car uses (e.g., Diesel, Petrol, CNG).
-Seller_Type: Defines whether the seller is a dealer or an individual.
-Transmission: Defines whether the car is manual or automatic.
-Owner: The number of previous owners the car has had.
-Steps to Achieve the Objective:
-Data Loading:
+## 🛠️ Tools & Libraries
+- **Python**: <code>pandas</code>, <code>numpy</code>, <code>scikit-learn</code>, <code>matplotlib</code>, <code>seaborn</code>
+- **Jupyter Notebook** for interactive analysis
 
-Load the dataset from Kaggle.
-Inspect the dataset for any missing values and perform necessary cleaning.
+---
 
-Data Exploration:
-Perform exploratory data analysis (EDA) to understand the distribution of data and the relationships between different features.
-Visualize the data using plots to identify trends and patterns.
+## 📈 Visualization Examples
+*(Include sample visuals here if possible)*
 
-Feature Engineering:
-Convert categorical features into numerical values using techniques like one-hot encoding.
-Create new features if necessary to improve the predictive power of the models.
+---
 
-Model Building:
-Split the dataset into training and testing sets.
+## 🤝 Contributing
+Feel free to fork this project, make updates, and submit pull requests. Contributions are always welcome!
 
-Implement basic linear regression models including:
-Linear Regression
-Ridge Regression
-Lasso Regression
-ElasticNet Regression
+---
 
-Results
-Ordinary Least Squares (OLS) Regression:
+## 📄 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-R-squared: 0.952
-
-Adjusted R-squared: 0.951
-
-Regularized Regression Results:
-
-Ridge Regression: R-squared = 0.756
-
-Lasso Regression: R-squared = 0.730
-
-ElasticNet Regression: R-squared = 0.766
-
-Conclusion:-
-
-The OLS regression model performed the best with an R-squared value of 0.952.
-
-Regularized regression models (Ridge, Lasso, ElasticNet) showed lower R-squared values, indicating they were less effective in this particular case.
-
-These results suggest that while regularization techniques are useful to prevent overfitting, they may not always provide better performance compared to OLS in all datasets.
