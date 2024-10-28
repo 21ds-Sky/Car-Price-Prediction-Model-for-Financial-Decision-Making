@@ -72,30 +72,18 @@ The dataset includes **301 records** and **9 features** related to used cars lis
 
 ---
 
-## 📂 Repository Structure
-
-project-directory │ ├── data │ └── vehicle-dataset.csv ├── notebooks │ └── eda.ipynb │ └── model_training.ipynb ├── models │ └── linear_regression_model.pkl │ └── ridge_regression_model.pkl │ └── lasso_regression_model.pkl │ └── elasticnet_regression_model.pkl ├── README.md └── requirements.txt
-
-
-
 ---
 
 ## 🛠️ Tools & Libraries
 - **Python**: <code>pandas</code>, <code>numpy</code>, <code>scikit-learn</code>, <code>matplotlib</code>, <code>seaborn</code>
 - **Jupyter Notebook** for interactive analysis
 
----
-
-## 📈 Visualization Examples
-*(Include sample visuals here if possible)*
 
 ---
 
 ## 🤝 Contributing
 Feel free to fork this project, make updates, and submit pull requests. Contributions are always welcome!
 
----
 
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
