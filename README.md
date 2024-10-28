@@ -3,6 +3,8 @@
   <strong>Analyze and predict used car prices using regression models</strong>
 </p>
 
+![Project Banner](taarzan-wonder-car-featured.jpg)
+
 ---
 
 ## 📋 Objective
